@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record model="ir.actions.report.xml" id="informe_ofertas">
+        <field name="name">Ofertas</field>
+        <field name="model">sale.order</field>
+        <field name="report_type">qweb-pdf</field>    
+        <field name="report_name">ejemplo2_curso.ofertas</field>
+      </record>
+
+      <report
+        id="informe_ofertas"
+        model="sale.order"
+        string="Ofertas"
+        report_type="qweb-pdf"
+        name="ejemplo2_curso.ofertas"
+        file="ejemplo2_curso.ofertas"
+      />
+    </data>
+</openerp>
